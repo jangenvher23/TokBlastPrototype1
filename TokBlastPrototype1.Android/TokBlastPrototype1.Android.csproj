@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD88B59B-882A-4773-B356-E6092E3ED003}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TokBlastPrototype1.Droid</RootNamespace>
+    <AssemblyName>TokBlastPrototype1.Android</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="CocosSharp">
+      <Version>1.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="CocosSharp.Forms">
+      <Version>1.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CSharp">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="NETStandard.Library">
+      <Version>2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Activity\MainActivity.cs" />
+    <Compile Include="Activity\SplashActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable\.DS_Store" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Activity\" />
+    <Folder Include="Assets\Content\Images\Ld\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TokBlastPrototype1\TokBlastPrototype1.csproj">
+      <Project>{5B63A5EE-6FDD-44E9-8E9D-97D28112B631}</Project>
+      <Name>TokBlastPrototype1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\.DS_Store" />
+    <AndroidAsset Include="Assets\Content\Fonts\FaceOffM54.ttf" />
+    <AndroidAsset Include="Assets\Content\Fonts\ProximaNova-Bold.ttf" />
+    <AndroidAsset Include="Assets\Content\Fonts\ProximaNovaCond-Xbold.otf" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\.DS_Store" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\BlackButton.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\InGame.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\bg.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\blimp.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\btn_back.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\btn_homeINgame.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\btn_howtoplay.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\btn_play.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\btn_profile.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\btn_rectangle.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\btn_setting.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\btn_shop.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\building.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\circmon.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\clock.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\close.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\clouds.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\fns.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\footer.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\frame.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\home.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\howtoplay1.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\inShop.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\loading_bar.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\loading_bg.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\loading_logo.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\loading_panel.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\panel_topBlank.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\panelhead.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\part1.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\part2.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\part3.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\plane.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\play.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\profile1.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\return.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\settings1.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\shop1.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\smash.png" />
+    <AndroidAsset Include="Assets\Content\Images\Hd\wordframe.png" />
+  </ItemGroup>
+ <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
